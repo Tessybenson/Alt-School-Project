@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+  </head>
+  <body>
+    <h1>Welcome To My About Page</h1>
+    <p>
+      My name is Blessing Theresa Ejeromedoghene ID number ALT/SOE/025/4480, and
+      I am a proud student of AltSchool Africa, currently enrolled in the School
+      of Engineering (S.O.E). I joined AltSchool because I believe in the power
+      of technology to transform lives, and I am passionate about building
+      meaningful solutions that solve real-world problems. The School of
+      Engineering offers me the perfect environment to grow my skills, challenge
+      myself, and connect with like-minded innovators. In this assignment, I’ve
+      used various media elements in HTML to creatively express who I am. Each
+      image, video, and audio clip represents a piece of my journey, my
+      interests, and my dreams. From responsive images that adapt across
+      devices, to an audio message and an embedded video, this page is a
+      reflection of my story in a uniquely digital form. Thank you for taking
+      the time to explore my work.
+    </p>
+    <br />
+    <section>
+      <!-- Audio in html-->
+      <audio
+        src="Assets/audio/Nathaniel-Bassey-Olorun-Agbaye-You-Are-Mighty-(TrendyBeatz.com).mp3"
+        controls
+      ></audio>
+      <br />
+      <!--Embed Video in Html-->
+      <video src="Assets/Video/about vid.mp4" controls></video>
+      <br />
+      <!-- Download Images on Html-->
+      <a href="Assets/image/image.png" download=""> Download Image</a>
+      <br />
+      <a href="Assets/image/Me.jpeg" download=""> Download Image</a>
+    </section>
+  </body>
+</html>
