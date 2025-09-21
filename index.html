@@ -3,69 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Profile</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>New form</title>
+    <link rel="stylesheet" href="app.css"/>
   </head>
   <body>
-  <div class="container">
-    <!-- Top Section -->
-    <div class="main-content">
-      <!-- Profile Section -->
-      <section class="profile-section">
-        <div class="profile-picture">
-        <img src="./profile.jpg" width="150" height="150" alt="profile-picture" class="profile-img" />
-        </div>
-        <div class="intro-text"></div>
+    <form action="">
+      <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to register with us</p>
+        <hr />
 
-        <!-- Talk About Yourself -->
-        <div class="intro">
-          <div class="box">
-          <h1><u>About Me</u></h1>
-          <p>
-            My name is Blessing Ejeromedoghene, and I am a passionate Backend Engineer student at AltSchool (ID: ALT/SOE/025/4480).
-            <br>I am on an exciting journey to become a skilled web developer with a strong focus on creating seamless, modern, and user-friendly websites.
-            <br>I thrive on solving complex problems, learning new technologies, and turning ideas into functional, impactful digital solutions. My goal is not just to build websites, but to develop scalable and efficient backend systems that enhance user experiences and drive innovation.
-            <br>When I’m not coding, I enjoy exploring emerging tech trends, improving my programming skills, and collaborating on projects that challenge me to grow.
-          </p>
-          </div>
-        </div>
+        <label for="fn"><b>First Name:</b></label>
+        <input type="text" placeholder="First Name" name="fn" id="fn" required/>
+        <br>
+        <label for="fn"><b>Last Name:</b></label>
+        <input type="text" placeholder="Last Name" name="fn"id="fn"required/>
+        <br>
+
+        <label for="psw"><b>Password:</b></label> 
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required/>
+        <input type="checkbox" onclick="togglePassword()"> Show Password
+        <br>
+
+        <label for="cpsw"><b>Password:</b></label>
+        <input type="password" placeholder="Enter Confirm Password" name="cpsw"id="cpsw" required/>
+        <input type="checkbox" onclick="togglePassword()"> Show Password
+        <hr/>
+        <button type="submit">Register</button>
       </div>
+    </form>
+    <script>
+function togglePassword() {
+  let x = document.getElementById("psw");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
 
-      <!-- Bottom Section -->
-      <div class="bottom-section">
-        <!-- Hobbies -->
-        <div class="box">
-          <h2>Hobbies</h2>
-          <ul>
-            <li>
-              <strong>Reading:</strong> Reading allows me to continuously learn,
-              sharpen my critical thinking skills, and gain fresh insights that
-              I can apply both personally and professionally.
-            </li>
-            <li>
-              <strong>Coding:</strong> I love experimenting with web development
-              projects.
-            </li>
-          </ul>
-        </div>
-
-        <!-- Aspiration -->
-        <div class="box">
-          <h2>Aspiration in Life</h2>
-          <p>
-            My aspiration is to become a skilled software engineer who builds
-            solutions that positively impact society. My goal is to continuously learn, 
-            grow, and create applications that not only solve problems but also inspire progress
-            in my community and beyond.
-          </p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <footer>
-      <p>&copy; 2025 Alt School Assignment Blessing Ejeromedoghene</p>
+function toggleConfirmPassword() {
+  let y = document.getElementById("cpsw");
+  if (y.type === "password") {
+    y.type = "text";
+  } else {
+    y.type = "password";
+  }
+}
+</script>
   </body>
 </html>
-
-
