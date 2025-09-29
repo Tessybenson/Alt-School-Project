@@ -1,11 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alt School Assignment</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stopwatch App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body data-theme="light">
+  <main class="app" role="main" aria-labelledby="title">
+    <header>
+      <div>
+        <h1 id="title"> Stopwatch App</h1>
+        <p class="lead">Track time with Start, Stop, Reset, Laps,Dark/Light mode.</p>
+      </div>
+      <div>
+        <button id="themeToggle" class="btn-ghost" aria-pressed="false">🌗 Theme</button>
+      </div>
+    </header>
+
+    <section class="display">
+      <div class="time" id="timeDisplay">00:00:00.000</div>
+      <div class="controls">
+        <button id="startBtn" class="btn-primary">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="lapBtn">Lap</button>
+        <button id="resetBtn" class="btn-danger">Reset</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="laps" id="laps"></div>
+      <div class="meta">
+       <footer>
+    <p>&copy; Tessy Uchenna First Semester Project @2025</p>
+  </footer>
+    </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
 <body>
-    <a href="recipe.html">Recipe Page</a>
+ 
 </body>
 </html>
